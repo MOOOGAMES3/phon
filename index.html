@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <href="https: //fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Anime</title>
+</head>
+
+<body>
+
+    <span class="press">press and hold</span>
+    <i id="icon" class="fa fa-arrow-left" style="font-size:48px;color:rgb(0, 0, 0);"></i>
+    <div>
+
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="Paris" style="width: 295px;height: 215px;">
+                </div>
+                <div class="flip-box-back">
+                    <p class="para1"> my name: Ichiro Oda</p>
+                    <p class="para2">Japanese name: 尾田 栄一郎</p>
+                    <p class="para3">Date of Birth: He was born in January 1975 AD in the city of Kumamoto</p>
+                    <p class="para4">His blood type: A</p>
+                    <p class="para5">Height: 172 cm</p>
+                    <p class="para6">Marital status: Married with two children</p>
+                    <p class="para7">Awards won: Silver Honors, 44th Tezuka Awards, Gold Honors, Hop-Step Awards</p>
+
+                </div>
+            </div>
+        </div>
+
+        <p class="para8">all his works
+            One Piece "from 1997 until now"
+            1998 Wanted "Short Stories Collection"
+            1992 "Wanted"
+            God's Present for the Future "1993"
+            Ikki Yaku "1993"
+            Romance Down "1996 Second Edition"
+            Dragon Ball x One Piece (Cross Epoch) 2007 "Co-work with Akira Toriyama"
+            One Piece X Torico "2011"
+            00
+            His month
+            One Piece manga is Oda's most famous work. The story of One Piece revolves around a pirate crew led by
+            Captain Monkey D. Luffy. Each crew member has a goal he would like to achieve. The main goal of the captain
+            is to find the legendary treasure “One Piece (the Rare Piece)” and become the Pirate King. The manga series
+            began in 1997, while the anime began broadcasting in Japan in 1999 and is still going on. So far, 1,027
+            episodes have been shown, between normal and special, in addition to twelve films.</p>
+
+        <h2 class="h1">his works</h2>
+        <p class="para9">its beginnings
+            When he was young, Oda was influenced by Akira Toriyama, the writer of the famous manga "Dragon Ball", when
+            Oda decided to become a mangaka. He always mentions that he was fond of pirate life from what he saw on TV
+            and anime, especially Vicky The Viking. When he was young, Oda wrote a manga called the panda man, and he
+            himself stated that he was making modifications to it to suit reality, and then he would display it soon out
+            of childhood pride.
+
+            In his seventeenth year, he wrote Oda Wanted!! He won numerous awards including second place in the Tazuka
+            Competition, which earned him a job at Shonen Jump magazine. His traditional work as an assistant to Shinobu
+            Kaitani was before he moved to Tokushiro Station, which gave him an unexpected influence in his career.
+
+            In his nineteenth year, after moving to several places - most importantly working as an assistant to
+            Nobuhiro Watasuki - he won the Qualifying Award for New Artists. Watasuki entrusted him with making the
+            character Hanjo Kamatri that appears in Ronwei Kenshin. Throughout this period, Oda did two pirate works
+            called Romance Down. At the same time, he drew the character Monkey D. Luffy, but not as it appears in the
+            anime (that is, he modified it afterwards). Between 1996 and 1997 he had finished the story and the current
+            drawing of Luffy as the protagonist, and modeled three of Luffy's companions on his three best friends at
+            Hiroki Taki University - but he refused to reveal the names of the three anime or his friends.
+
+            In 1997, One Piece first appeared in Shonen Jump magazine and became one of the most popular manga in Japan.
+            Akira Toriyama, the author of Dragon Ball and Doctor Slam, was in a press interview. He was asked about the
+            three best-loved manga for him after his books, and he replied: Two have made a so-called leap in the manga
+            world, Toriyama and Oda with their work Dragon Ball One Piece.
+
+            At first, Oda decided to make the One Piece manga start and end within five years, but he quickly changed
+            his mind when he found that sales of the first manga chapter had reached the highest sales of manga chapters
+            in Japan - at that time - and he stopped the manga and modified the story, making it reach 12 years and did
+            not It ends so far and then resume the story in 1999 to continue until now.</p>
+    </div>
+    <br>
